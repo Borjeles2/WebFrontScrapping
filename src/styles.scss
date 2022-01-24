@@ -1,0 +1,88 @@
+/* .body{
+  background-color: slategrey
+} */
+
+/* .titulo {
+  text-align: center;
+  background-color: burlywood;
+  } */
+
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr;
+    grid-template-rows:    0.25fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr;
+    
+    /* background-color: slategrey; */
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-gap: 260px;
+    grid-template-rows: 50px auto; */
+
+    /* grid-column-gap: 10px; */
+  }
+
+.grid2 {
+  text-align: center;
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(253, 247, 237);
+  background-color: #090d05;
+  border-color: black;
+  border: 1px solid #000;
+  padding: 1.5em 0em 1.5em 0em;
+  }
+
+body {
+    font: 400 1em/1.5 "Neuton";
+    background: #090d05;
+    color: rgba(255, 255, 255, 0.25);
+    text-align: center;
+    margin: 0;
+ }
+  .titulo {
+    // background-color: aliceblue;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    display: inline-block;
+    // border: 4px double rgba(255, 255, 255, 0.25);
+    border-width: 4px 0;
+    padding: 1.5em 0em;
+    // position: absolute;
+    top: 2%;
+    left: 50%;
+    width: 40em;
+    // margin: 0 0 0 -20em;
+ }
+ .titulo span {
+    font: 700 4em "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+   /* Clip Background Image */
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+   /* Animate Background Image */
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+            animation:aitf 80s linear infinite; 
+   /* Activate hardware acceleration for smoother animations */
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+ }
+ /* Animate Background Image */
+ @keyframes aitf {
+    0% {
+      background-position: 0% 50%;
+   }
+    100% {
+      background-position: 100% 50%;
+   }
+ }
+
+  

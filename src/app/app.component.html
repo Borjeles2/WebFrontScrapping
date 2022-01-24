@@ -1,0 +1,24 @@
+<router-outlet></router-outlet>
+<div>
+    <p class="titulo">
+        Peliculas estrenadas para ver
+        <span>
+            SI TE ABURRES
+        </span>
+        &mdash; By Borja &mdash;
+    </p>
+</div>
+<!-- <h1 class="titulo">PELICULAS ESTRENADAS PARA VER</h1> -->
+
+<div class="grid1" >
+    <div class="grid2" *ngFor="let item of peliculas">
+        {{item.fechaestreno | date:"dd/MM/yyyy"}}
+        <br/>
+        <img src="{{item.imagen}}">
+        <br/>
+        <br/> 
+        {{item.nombre}}
+        <br/> 
+        
+    </div>
+</div>
